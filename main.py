@@ -1,4 +1,4 @@
-import aiosqlite, discord
+import aiosqlite, discord, keys
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix="!")
@@ -74,4 +74,5 @@ async def searchquote(ctx, substring):
     except Exception as e:
         print(e)
 
-bot.run("ODI3Mjc2MzA5MTE3NDAzMTc3.YGYrGg.lKN6uK_mAQQXoo2mC1D4A24jXCs")
+
+bot.run(keys.TOKEN)
